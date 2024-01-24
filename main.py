@@ -308,10 +308,6 @@ def open_settings():
 
         python = sys.executable
         os.execl(python, python, *sys.argv)
-
-        
-
-
         
     # Create a button to save the settings
     Button(settings_window, text="Save", command=save, highlightbackground=BACKGROUND_COLOR, borderwidth=3, relief="solid").pack(pady=20, padx=50, anchor="w")
