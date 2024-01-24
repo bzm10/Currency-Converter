@@ -12,17 +12,18 @@ import sys
 
 
 # Main color variable
-with open("files/settings.json", "r") as file:
+with open("path-to-settings.json-file", "r") as file:
     settings = json.load(file)
     COLOR = settings.get("color", "#002678")
 
 # Global variables
 BACKGROUND_COLOR = COLOR
 API_URL = "https://open.er-api.com/v6/latest/{from_currency}"
-SETTINGS = r"files/settings.json"
-CONVERSIONS = r"files/conversions.json"
-CURRENCIES = r"files/currencies.csv"
-LOG = r"files/history.log"
+path = r"path-to-files-folder"
+SETTINGS = path + r"settings.json"
+CONVERSIONS = path + r"conversions.json"
+CURRENCIES = path + r"currencies.csv"
+LOG = path + r"history.log"
 
 # Create the Tkinter window
 root = Tk()
